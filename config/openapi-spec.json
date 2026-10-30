@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.0",
+  "info": { "title": "Stock Quote API", "version": "1.0.0", "description": "API for retrieving stock market data from Alpha Vantage" },
+  "servers": [{ "url": "https://www.alphavantage.co" }],
+  "paths": {
+    "/query": {
+      "get": {
+        "operationId": "getStockQuote",
+        "summary": "Get stock quote",
+        "description": "Latest price, open, high, low, volume and change for one ticker.",
+        "parameters": [
+          { "name": "function", "in": "query", "required": true, "schema": { "type": "string", "enum": ["GLOBAL_QUOTE"] }, "description": "API function type. Always GLOBAL_QUOTE." },
+          { "name": "symbol", "in": "query", "required": true, "schema": { "type": "string" }, "description": "Stock symbol in upper case (e.g., MSFT, AAPL, GOOGL)" }
+        ],
+        "responses": { "200": { "description": "Successful response", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    }
+  },
+  "components": { "securitySchemes": { "apiKeyQuery": { "type": "apiKey", "name": "apikey", "in": "query" } } },
+  "security": [{ "apiKeyQuery": [] }]
+}

@@ -1,0 +1,13 @@
+{
+  "PartitionKey": "@{triggerBody()?['symbol']}",
+  "RowKey": "@{utcNow()}",
+  "Symbol": "@{triggerBody()?['symbol']}",
+  "Price": "@{triggerBody()?['price']}",
+  "Open": "@{triggerBody()?['open']}",
+  "High": "@{triggerBody()?['high']}",
+  "Low": "@{triggerBody()?['low']}",
+  "Volume": "@{triggerBody()?['volume']}",
+  "TradingDay": "@{triggerBody()?['tradingDay']}",
+  "Change": "@{triggerBody()?['change']}",
+  "ChangePercent": "@{triggerBody()?['changePercent']}"
+}

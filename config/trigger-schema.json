@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "symbol": { "type": "string", "description": "Ticker symbol in upper case, e.g. MSFT. From Alpha Vantage '01. symbol'." },
+    "price": { "type": "string", "description": "Latest price as a decimal string, e.g. 383.45. From '05. price'." },
+    "open": { "type": "string", "description": "Opening price for the trading day. From '02. open'." },
+    "high": { "type": "string", "description": "Highest price for the trading day. From '03. high'." },
+    "low": { "type": "string", "description": "Lowest price for the trading day. From '04. low'." },
+    "volume": { "type": "string", "description": "Shares traded, digits only. From '06. volume'." },
+    "tradingDay": { "type": "string", "description": "Trading date as YYYY-MM-DD. From '07. latest trading day'." },
+    "change": { "type": "string", "description": "Price change versus previous close; can be negative. From '09. change'." },
+    "changePercent": { "type": "string", "description": "Percent change including the % sign, e.g. 0.96%. From '10. change percent'." }
+  },
+  "required": ["symbol", "price", "open", "high", "low", "volume", "tradingDay", "change", "changePercent"]
+}
