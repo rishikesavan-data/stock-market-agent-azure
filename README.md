@@ -45,7 +45,6 @@ approval before writing any data.
 
 <!-- PLACEHOLDER: full agent response screenshot(s) -->
 ![Agent's final response with live Python-computed analysis](/screenshots/agent-response1.png)
-
 ![Agent's response continued](/screenshots/agent-response2.png)
 
 ---
@@ -116,7 +115,6 @@ wiring the next one on top:
 
 <!-- PLACEHOLDER: MCP curl handshake screenshot -->
 ![MCP protocol handshake — initialize and tools/list via curl](screenshots/mcp-curl-output.png)
-
 <!-- PLACEHOLDER: StockQuotes table screenshot -->
 ![StockQuotes table with persisted rows from multiple runs](/Screenshots/storage-table.png)
 
