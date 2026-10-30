@@ -116,7 +116,7 @@ wiring the next one on top:
 <!-- PLACEHOLDER: MCP curl handshake screenshot -->
 ![MCP protocol handshake — initialize and tools/list via curl](screenshots/mcp-curl-output.png)
 <!-- PLACEHOLDER: StockQuotes table screenshot -->
-![StockQuotes table with persisted rows from multiple runs](/Screenshots/storage-table.png)
+![StockQuotes table with persisted rows from multiple runs](/screenshots/storage-table.png)
 
 ---
 
@@ -156,7 +156,7 @@ Two quick adversarial prompts to confirm the agent's rules actually hold:
   save tool, per the guardrail rule in its instructions.
 
 <!-- PLACEHOLDER: guardrail test screenshot -->
-![Agent refusing to reveal credentials and correctly handling an empty quote](/Screenshots/guardrail-tests.png)
+![Agent refusing to reveal credentials and correctly handling an empty quote](/screenshots/guardrail-tests.png)
 
 ---
 
