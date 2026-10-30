@@ -1,4 +1,4 @@
-# StockMarketAgent
+# Stock Market Agent
 
 An AI agent built on **Microsoft Foundry** that fetches a live stock quote, saves it to
 **Azure Table Storage** through a **Logic App exposed as an MCP (Model Context Protocol) server**,
