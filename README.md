@@ -26,7 +26,7 @@ approval before writing any data.
 ## Demo video
 
 <!-- PLACEHOLDER: demo video -->
-[▶ Watch the demo video](/Screenshots/demo_video/demo.mp4)
+[▶ Watch the demo video](/screenshots/video/demo_video.mp4)
 <!-- Put demo.mp4 in the screenshots/ folder, OR upload it via a GitHub Issue
      (drag the file into a new issue's text box) to get a hosted link like
      https://github.com/user-attachments/assets/xxxxxxxx — paste that in place
@@ -44,8 +44,9 @@ approval before writing any data.
 4. Answers in plain English, using only numbers that came from the tools — never invented.
 
 <!-- PLACEHOLDER: full agent response screenshot(s) -->
-![Agent's final response with live Python-computed analysis](screenshots/agent-response1.png)
-![Agent's response continued](screenshots/agent-response2.png)
+![Agent's final response with live Python-computed analysis](/screenshots/agent-response1.png)
+
+![Agent's response continued](/screenshots/agent-response2.png)
 
 ---
 ## Architecture
@@ -74,7 +75,7 @@ approval before writing any data.
 ```
 
 <!-- PLACEHOLDER: Logic App workflow designer screenshot -->
-![Logic App workflow: trigger → Insert or Update Entity → Response](/Screenshots/logic-app-workflow.png.png)
+![Logic App workflow: trigger → Insert or Update Entity → Response](/screenshots/logic-app-workflow.png)
 
 Three layers, no secret ever reaches the model: each key is attached on the way out by
 Foundry (for the OpenAPI call) or by the Logic App's own connection (for the table write).
@@ -117,7 +118,7 @@ wiring the next one on top:
 ![MCP protocol handshake — initialize and tools/list via curl](screenshots/mcp-curl-output.png)
 
 <!-- PLACEHOLDER: StockQuotes table screenshot -->
-![StockQuotes table with persisted rows from multiple runs](/Screenshots/storage-table.png.png)
+![StockQuotes table with persisted rows from multiple runs](/Screenshots/storage-table.png)
 
 ---
 
@@ -157,7 +158,7 @@ Two quick adversarial prompts to confirm the agent's rules actually hold:
   save tool, per the guardrail rule in its instructions.
 
 <!-- PLACEHOLDER: guardrail test screenshot -->
-![Agent refusing to reveal credentials and correctly handling an empty quote](/Screenshots/guardrail-tests.png.png)
+![Agent refusing to reveal credentials and correctly handling an empty quote](/Screenshots/guardrail-tests.png)
 
 ---
 
